@@ -3,8 +3,9 @@
 
 module.exports = (request, res) => {
   
-  const { method, url } = request;
-console.log(method, url)
-
+ 
+  console.log(666)
+  console.log(request.method)
+  console.log(request.url)
   res.send(666)
 }
