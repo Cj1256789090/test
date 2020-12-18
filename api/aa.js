@@ -1,11 +1,11 @@
 
-
+const request = require('request');
 
 module.exports = (request, res) => {
   
- 
-  console.log(666)
-  console.log(request.method)
-  console.log(request.url)
-  res.send(666)
+  request('https://cyjx.cool', (err, res, body) => {
+    if (err) { return console.log(err); }
+    res.send(body);
+  });
+  
 }
