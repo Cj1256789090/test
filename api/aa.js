@@ -1,9 +1,9 @@
 
-const request = require('request');
+const request1 = require('request');
 
 module.exports = (request, res) => {
   
-  request('https://cyjx.cool', (err, res, body) => {
+  request1('https://cyjx.cool', (err, res, body) => {
     if (err) { return console.log(err); }
     res.send(body);
   });
