@@ -3,5 +3,5 @@
 
 module.exports = (req, res) => {
   console.log(req)
-  res.send("sssss")
+  res.send(JSON.stringify(req))
 }
