@@ -2,6 +2,6 @@
 
 
 module.exports = (req, res) => {
-  console.log("555")
+  console.log(req)
   res.send("sssss")
 }
